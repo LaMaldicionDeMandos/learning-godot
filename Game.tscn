@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://bfed8idggqw4q"]
+[gd_scene load_steps=2 format=3 uid="uid://bfed8idggqw4q"]
+
+[ext_resource type="TileSet" uid="uid://cd02fwp5y8upj" path="res://assets/ground.tres" id="1_ifdk4"]
 
 [node name="Game" type="Node2D"]
+
+[node name="GameWorld" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="GameWorld"]
+tile_set = ExtResource("1_ifdk4")
+format = 2
+layer_0/tile_data = PackedInt32Array(65535, 524288, 13, -1, 524288, 13, -65536, 524288, 13, -131072, 524288, 13, -131071, 589824, 13, -65535, 589824, 13, -131070, 589824, 13, -65534, 589824, 13, -196607, 589824, 13, -196606, 589824, 13, 1, 655360, 13, 2, 655360, 13, -196608, 655360, 13, -262144, 655360, 13, -262143, 655360, 13, -262142, 655360, 13, -262141, 655360, 13, -196605, 655360, 13, -131069, 655360, 13, -65533, 655360, 13, 3, 655360, 13, 0, 655360, 13, -65537, 655360, 13, -131073, 655360, 13, -196609, 655360, 13)
