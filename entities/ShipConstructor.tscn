@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvuqv2g2kw562"]
+
+[ext_resource type="Texture2D" uid="uid://1y6y76gnh1av" path="res://assets/constructor64x64.png" id="1_r0qjo"]
+
+[node name="ShipContructor" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r0qjo")

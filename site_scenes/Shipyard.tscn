@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://daomgsymhtp6r"]
+[gd_scene load_steps=3 format=3 uid="uid://daomgsymhtp6r"]
+
+[ext_resource type="TileSet" uid="uid://cd02fwp5y8upj" path="res://assets/ground.tres" id="1_dgpuh"]
+[ext_resource type="PackedScene" uid="uid://dvuqv2g2kw562" path="res://entities/ShipConstructor.tscn" id="2_4etqk"]
 
 [node name="Shipyard" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_dgpuh")
+format = 2
+layer_0/tile_data = PackedInt32Array(65535, 524288, 13, -1, 524288, 13, 65534, 524288, 13, 131070, 524288, 13, 131071, 524288, 13, 65536, 524288, 13, 0, 524288, 13, -65536, 524288, 13, -2, 524288, 13)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="ShipContructor" parent="." instance=ExtResource("2_4etqk")]

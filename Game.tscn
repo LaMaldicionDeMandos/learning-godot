@@ -1,21 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfed8idggqw4q"]
+[gd_scene load_steps=3 format=3 uid="uid://bfed8idggqw4q"]
 
 [ext_resource type="Script" path="res://Game.gd" id="1_5asl8"]
-[ext_resource type="TileSet" uid="uid://cd02fwp5y8upj" path="res://assets/ground.tres" id="1_ifdk4"]
-[ext_resource type="Script" path="res://GameWorld.gd" id="2_xisun"]
+[ext_resource type="PackedScene" uid="uid://daomgsymhtp6r" path="res://site_scenes/Shipyard.tscn" id="2_pu3v8"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(0, -2)
 script = ExtResource("1_5asl8")
 
-[node name="GameWorld" type="Node2D" parent="."]
-script = ExtResource("2_xisun")
-
-[node name="TileMap" type="TileMap" parent="GameWorld"]
-y_sort_enabled = true
-tile_set = ExtResource("1_ifdk4")
-format = 2
-layer_0/y_sort_enabled = true
-
-[node name="Camera2D" type="Camera2D" parent="GameWorld"]
-zoom = Vector2(4, 4)
+[node name="Shipyard" parent="." instance=ExtResource("2_pu3v8")]
