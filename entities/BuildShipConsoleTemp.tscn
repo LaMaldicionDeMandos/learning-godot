@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbkl5df0bgtxr"]
+
+[ext_resource type="Texture2D" uid="uid://df7cxrfphoq4s" path="res://assets/sci_fi.png" id="1_qcn4e"]
+
+[node name="BuildShipConsole" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, -10)
+texture = ExtResource("1_qcn4e")
+region_enabled = true
+region_rect = Rect2(48, 349, 48, 51)

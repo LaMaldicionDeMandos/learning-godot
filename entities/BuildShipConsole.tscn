@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj44q8ptvmmlw"]
+
+[ext_resource type="Texture2D" uid="uid://df7cxrfphoq4s" path="res://assets/sci_fi.png" id="1_sb61t"]
+
+[node name="BuildShipConsole" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(24, -10)
+texture = ExtResource("1_sb61t")
+region_enabled = true
+region_rect = Rect2(48, 413, 48, 51)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(8, -10)
+texture = ExtResource("1_sb61t")
+region_enabled = true
+region_rect = Rect2(48, 349, 48, 51)
